@@ -1,0 +1,98 @@
+:root {
+  --light-pink: #f5e5e5;
+  --main-pink: #e26e9e;
+  --dark-gray: #393939;
+  --white: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  background-color: var(--light-pink);
+  display: flex;
+  font: 16px/1.05 "Monsterrat", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.envelope,
+.card {
+  background-color: var(--white);
+  box-shadow: -1px 8px 3px 0 rgba(0, 0, 0, 0.6);
+  height: 21em;
+  width: 15em;
+  padding: 2em;
+  position: relative;
+}
+
+.envelope {
+  background-color: var(--main-pink);
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+  margin: -2em -2em;
+  position: absolute;
+  transform: rotate(-17deg);
+  z-index: -1;
+}
+
+.card {
+  background-color: var(--white);
+  margin: 10px;
+}
+
+.card-note {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 0;
+  width: 90%;
+}
+
+.words {
+  color: var(--main-pink);
+}
+
+.icon-container {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+}
+
+/* ICON */
+.mingcute--mountain-fill {
+  margin-left: 5em;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z'/%3E%3Cpath fill='%23e26e9e' d='M10.762 6.025a39.726 39.726 0 0 1-1.084 3.24c.362.334.7.699 1.048 1.047l.38-.76a1 1 0 0 1 1.601-.26l1.019 1.02l.38-.76a.997.997 0 0 1 .216-.287a39.778 39.778 0 0 1-1.084-3.24C13.226 5.98 13.157 6 13.123 6l-.88.22a1 1 0 0 1-.486 0l-.88-.22c-.036 0-.102-.023-.115.025M3.788 17.29c-.148.281-.276.52-.38.709H3a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2h-.409c-.103-.19-.23-.428-.38-.709a95.039 95.039 0 0 1-1.586-3.139c-1.235-2.559-2.654-5.808-3.462-8.67A2.025 2.025 0 0 0 13.22 4c-.423 0-.81.117-1.219.22c-.41-.103-.796-.22-1.22-.22c-.921 0-1.701.624-1.943 1.481c-.808 2.863-2.228 6.112-3.462 8.671a94.72 94.72 0 0 1-1.587 3.14'/%3E%3C/g%3E%3C/svg%3E");
+}
+.material-symbols--directions-walk-rounded {
+  animation: myAnim 10s ease 1s 1 normal forwards;
+  display: inline-block;
+  width: 2em;
+  height: 2.2em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23e26e9e' d='m10.9 14.9l-1.625 7.3q-.075.35-.363.575T8.25 23q-.5 0-.8-.375t-.2-.85L9.8 8.9L8 9.6V12q0 .425-.288.713T7 13q-.425 0-.712-.288T6 12V8.95q0-.3.163-.537T6.6 8.05l4.45-1.9q.35-.15.738-.175t.737.1q.35.125.663.35T13.7 7l1 1.6q.325.5.763.95t.987.775q.35.2.775.363t.85.237q.4.075.663.363T19 12q0 .425-.3.7t-.725.225q-1.4-.2-2.513-.875t-1.937-1.625L12.9 13.5l1.8 1.7q.15.15.225.338t.075.387V22q0 .425-.288.713T14 23q-.425 0-.712-.288T13 22v-5.5zm2.6-9.4q-.825 0-1.412-.587T11.5 3.5q0-.825.588-1.412T13.5 1.5q.825 0 1.413.588T15.5 3.5q0 .825-.587 1.413T13.5 5.5'/%3E%3C/svg%3E");
+}
+
+@keyframes myAnim {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100px);
+  }
+
+  0% {
+    transform: translateX(0);
+  }
+}
